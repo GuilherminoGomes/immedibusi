@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+:root {
+    --main-green: #1bdc79;
+    --font-color: #1f1d38;
+    --ghost-white: #f5f8fd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: var(--font-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+*::selection {
+    background-color: rgba(22, 182, 99, 0.9);
+}
+
+/*HEADER---------------------------------*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 30px rgba(127,137,161,0.3);
+    padding: 15px 9%;
+    position: fixed;
+    width: 83%;
+    z-index: 999;
+}
+
+.logo {
+    height: 45px;
+    width: 269px;
+    margin-right: auto;
+}
+
+.active-nav-li {
+    color: var(--main-green);
+    border-bottom: 2px var(--main-green) solid;
+}
+
+nav ul li {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    padding: 0 5px 3px 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: border .1s ease-in, color ease .3s;
+    color: var(--font-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul li:hover {
+    color: var(--main-green);
+    border-bottom: 2px var(--main-green) solid;
+}
+
+nav ul li:last-child {
+    margin-right: 5px;
+}
+
+
+/* HOME SECTION----------------------------------*/
+/*MAIN------------------------------------*/
+.home-section .main {
+    background: url(images/wave.svg);
+    background-color: var(--ghost-white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 300px;
+    padding: 140px 0 190px 9%;
+    display: flex;
+    align-items: center;
+}
+
+.home-section .main h1{
+    font-size: 52px;
+    margin-bottom: 40px;
+}
+
+.home-section .main span {
+    color: var(--main-green);
+    font-size: 52px;
+}
+
+.home-section .main button {
+    font-size: 14px;
+    padding: 11px 34px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-green);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+.home-section .main button:hover {
+    background-color: #16B663;
+    transform: scale(1.1);
+}
+
+.home-section .main img {
+    width: 600px;
+    height: 505px;
+    margin-left: 30px;
+    margin-top: 165px;
+    user-select: none;
+}
+
+/*WHY CHOOSE US----------------------------------------*/
+.why-choose-us-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 6%;
+}
+
+.why-choose-us-left {
+    width: 50%;
+}
+
+.why-choose-us-left h3 {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.why-choose-us-left p {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-right: 100px;
+    text-align: justify;
+}
+
+.why-choose-us-left-imgs {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.why-choose-us-left-imgs p {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.why-choose-us-left-imgs img {
+    height: 49px;
+    width: 49px;
+    margin-right: 15px;
+}
+
+.why-choose-us-right {
+    background: url(images/why-choose-us-right-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 500px;
+
+}
+
+/*OUR CLIENTS----------------------------------------*/
+.our-clients-div {
+    background-color: var(--ghost-white);
+    padding: 60px 0;
+}
+
+.our-clients-imgs-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-clients-div h3 {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.our-clients-imgs {
+    filter: brightness(0.7);
+    transition: ease all .4s;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+.our-clients-imgs:hover {
+    filter: brightness(1);
+}
+
+.belimo-logo, .grabyo-logo {
+    width: 148px;
+    height: 52px;
+}
+
+.belimo-logo {
+    margin-left: 0;
+}
+
+.citrus-logo, .life-groups-logo {
+    width: 148px;
+    height: 52.5px;
+}
+
+.myob-logo {
+    width: 148px;
+    height: 64px;
+}
+
+.trustly-logo {
+    width: 148px;
+    height: 46px;
+}
+
+/*NEWSLETTER---------------------------------------*/
+.newsletter {
+    background-color: var(--main-green);
+    text-align: center;
+    padding: 80px 0;
+}
+
+.newsletter h3 {
+    font-size: 42px;
+    margin-bottom: 35px;
+}
+
+.newsletter p {
+    font-size: 17px;
+    padding: 0 130px;
+    margin-bottom: 25px;
+}
+
+.newsletter input {
+    font-size: 18px;
+    padding: 3px 239px 3px 5px;
+    margin-bottom: 12px;
+}
+
+.newsletter button {
+    background-color: var(--main-green);
+    border: var(--font-color) 1px solid;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 12px 200px;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+.newsletter button:hover {
+    background-color: var(--font-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+
+/*FOOTER--------------------------------------*/
+footer {
+    padding: 20px 0;
+    color: var(--font-color); 
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.invisible-div {
+    display: none;
+}
