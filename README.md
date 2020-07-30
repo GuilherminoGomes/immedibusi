@@ -6,7 +6,7 @@ Website of a business consulting companie
 
 ## Built With
 
-* HTML5
+* HTML
 * CSS
 * JAVASCRIPT
 
