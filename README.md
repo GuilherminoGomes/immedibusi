@@ -1,6 +1,6 @@
 # Immedibusi
 
-Website of a business consulting companie 
+Website of a business consulting companie.
 
 [Immedibusi](https://guilherminogomes.github.io/immedibusi/)
 
