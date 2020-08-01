@@ -66,7 +66,7 @@ header ul li a {
     position: relative;
     margin: 0 15px;
     text-decoration: none;
-    color: #1f1d38;
+    color: var(--font-color);
     transition: color 0.2s ease, border 0.3s ease, padding 0.3s;
     font-size: 14px;
     font-weight: 600;
@@ -77,14 +77,14 @@ header ul li a:hover {
     position: relative;
     margin: 0 15px;
     text-decoration: none;
-    color: #1bdc79;
+    color: var(--main-green);
     padding-bottom: 5px;
-    border-bottom: #1bdc79 solid 2px;
+    border-bottom: var(--main-green) solid 2px;
 }
  
 .active-nav-li {
-    color: #1bdc79;
-    border-bottom: 2px #1bdc79 solid;
+    color: var(--main-green);
+    border-bottom: 2px var(--main-green) solid;
     padding-bottom: 5px;
 }
 
@@ -126,7 +126,7 @@ header ul li a:hover {
 }
 
 #home-section .main button:hover {
-    background-color: #16B663;
+    background-color: #16b663;
     transform: scale(1.1);
 }
 
@@ -264,6 +264,8 @@ header ul li a:hover {
     font-size: 18px;
     padding: 3px 239px 3px 5px;
     margin-bottom: 12px;
+    color: #dce1ec;
+    border: solid 1px black;
 }
 
 .newsletter button {
@@ -713,108 +715,75 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.invisible-div {
-    display: none;
+/*CONTACT US SECTION--------------------------------------*/
+/**/
+#contact-us-section {
+    background: url(images/wave-contact-us.svg);
+    background-color: var(--ghost-white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 150px 0 0 0;
 }
+
+#contact-us-section h3 {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 42px;
+}
+
+.contact-us-div {
+    text-align: center;
+}
+
+.contact-us-div p {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.contact-us-div p:nth-child(3) {
+    margin-top: 55px;
+}
+
+.contact-us-div p:last-child {
+    margin-top: 40px;
+}
+
+#contact-us-section form {
+    display: flex;
+    flex-direction: column;
+    color: #dce1ec;
+    padding: 70px 25% 60px 25%;
+}
+
+#contact-us-section input,
+#contact-us-section textarea {
+    border: solid 1px #dce1ec;
+    font-size: 18px;
+    padding: 3px 0 3px 5px;
+    margin-bottom: 12px;
+}
+
+#contact-us-section textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 80px;
+}
+
+#contact-us-section button {
+    background-color: #16b663;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#contact-us-section button:hover {
+    background-color: #139F57;
+}
+
+
+
