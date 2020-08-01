@@ -20,7 +20,7 @@
 }
 
 *::selection {
-    background-color: rgba(22, 182, 99, 0.9);
+    background-color: #16b663;
 }
 
 /*HEADER---------------------------------*/
@@ -67,7 +67,7 @@ header ul li a {
     margin: 0 15px;
     text-decoration: none;
     color: #1f1d38;
-    transition: color 0.3s ease, border 0.5 ease;
+    transition: color 0.2s ease, border 0.3s ease, padding 0.3s;
     font-size: 14px;
     font-weight: 600;
     padding: 0 3px 0 3px;
@@ -92,7 +92,7 @@ header ul li a:hover {
 /* HOME SECTION----------------------------------*/
 /*MAIN------------------------------------*/
 #home-section .main {
-    background: url(images/wave.svg);
+    background: url(images/wave-main.svg);
     background-color: var(--ghost-white);
     background-repeat: no-repeat;
     background-size: cover;
@@ -209,14 +209,13 @@ header ul li a:hover {
 }
 
 .our-clients-imgs {
-    filter: brightness(0.7);
     transition: ease all .4s;
-    cursor: pointer;
     margin: 0 15px;
+    filter: opacity(0.57);
 }
 
 .our-clients-imgs:hover {
-    filter: brightness(1);
+    filter: opacity(1);
 }
 
 .belimo-logo, .grabyo-logo {
@@ -311,52 +310,284 @@ footer {
 }
 
 
+/*ABOUT US SECTION----------------------------------*/
+/*ABOUT US DIV------------------------------------*/
+.about-us-div {
+    background: url(images/wave-about-us.svg);
+    background-color: var(--ghost-white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 150px 10% 50px 9%;
+    display: flex;
+    align-items: center;
+    /*height: 300px;
+    width: 100%;*/
+}
+
+.about-us-div-left {
+    border-right: 4px solid #d1dae9;
+    border-bottom: 4px solid #d1dae9;
+    padding: 0 6px 6px 0;
+    width: 40%;
+    border-bottom-right-radius: 20px;
+    margin-right: 75px;
+}
+
+.about-us-div-left-img {
+    background: url(images/about-us-div-left-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 460px;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 15px;
+}
+
+.about-us-div-right {
+    width: 60%;
+}
+
+.about-us-div-right h3 {
+    font-size: 42px;
+    padding-bottom: 23px;
+}
+    
+.about-us-div-right h4 {
+    font-size: 23px;
+    margin-bottom: 20px;
+    color: #57566A;
+    font-weight: 500;
+}
+
+.about-us-div-right p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+/*SERVICES-------------------------------------*/
+.services {
+    background: url(images/wave-services.svg);
+    background-color: var(--ghost-white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.services h3 {
+    font-size: 42px;
+    margin-bottom: 23px;
+}
+
+.services p {
+    color: #57566A;
+}
+
+.services-grid {
+    display: grid;
+    grid-column: repeat(3, 1fr);
+    grid-row: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 60px;
+    padding: 0 9%;
+}
+
+.services-grid-panel-1,
+.services-grid-panel-2,
+.services-grid-panel-3,
+.services-grid-panel-4,
+.services-grid-panel-5,
+.services-grid-panel-6 {
+    padding: 30px;
+    box-shadow: 0 10px 29px 0 rgba(68,88,144,0.1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.services-grid-panel-1:hover,
+.services-grid-panel-2:hover,
+.services-grid-panel-3:hover,
+.services-grid-panel-4:hover,
+.services-grid-panel-5:hover,
+.services-grid-panel-6:hover {
+    transform: scale(1.1);
+}
+
+.services-grid-panel-1:hover h6,
+.services-grid-panel-2:hover h6,
+.services-grid-panel-3:hover h6,
+.services-grid-panel-4:hover h6,
+.services-grid-panel-5:hover h6,
+.services-grid-panel-6:hover h6 {
+    color: var(--main-green);
+}
+
+.services-grid-panel-1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.services-grid-panel-2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.services-grid-panel-3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.services-grid-panel-4 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.services-grid-panel-5 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.services-grid-panel-6 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.services-grid img {
+    height: 55px;
+    width: 55px;
+    margin-bottom: 12px;
+}
+
+.services-grid h6 {
+    font-size: 18px;
+    margin-bottom: 19px;
+    transition: all 0.35s ease-out;
+}
+
+.services-grid p {
+    text-align: left;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/*OUR TEAM----------------------------------------*/
+.our-team {
+    text-align: center;
+    padding: 50px 0 80px 0;
+    background: url(images/wave-our-team.svg);
+    background-color: var(--ghost-white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.our-team h3 {
+    font-size: 42px;
+    margin-bottom: 45px;
+}
+
+.our-team-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 9%;
+    justify-content: space-between;
+}
+
+.our-team-img-1,
+.our-team-img-2,
+.our-team-img-3,
+.our-team-img-4 {
+    height: 255px;
+    width: 255px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow: 0 10px 29px 0 rgba(68,88,144,0.1);
+}
+
+.our-team-img-1 {
+    background: url(images/our-team-img-1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.our-team-img-2 {
+    background: url(images/our-team-img-2.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.our-team-img-3 {
+    background: url(images/our-team-img-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.our-team-img-4 {
+    background: url(images/our-team-img-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.our-team-img-bottom {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 29%;
+    padding: 13px 0 5px 0;
+    transition: all 0.3s;
+}
 
 
+.our-team-img-1:hover .our-team-img-bottom,
+.our-team-img-2:hover .our-team-img-bottom,
+.our-team-img-3:hover .our-team-img-bottom,
+.our-team-img-4:hover .our-team-img-bottom {
+    height: 41%;
+}
 
+.our-team-img-bottom h6 {
+    color: white;
+    font-size: 19px;
+    margin-bottom: 6px;
+}
 
+.our-team-img-bottom p {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 13px;
+}
 
+.our-team-img-bottom img {
+    height: 20px;
+    width: 20px;
+    margin-top: 50px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
 
+.our-team-img-1:hover .our-team-img-bottom img,
+.our-team-img-2:hover .our-team-img-bottom img,
+.our-team-img-3:hover .our-team-img-bottom img,
+.our-team-img-4:hover .our-team-img-bottom img{
+    margin-top: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#about-us-section .our-clients-div {
+    background: url(images/wave-about-us-our-clients.svg);
+    background-color: var(--ghost-white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
 
 
 
