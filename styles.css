@@ -282,12 +282,11 @@ header ul li a:hover {
     transform: scale(1.1);
 }
 
-
 /*FOOTER--------------------------------------*/
 footer {
-    padding: 20px 0;
+    padding: 22px 0;
     color: var(--font-color); 
-    background-color: white;
+    background-color: var(--main-green);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -543,9 +542,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.7);
     height: 29%;
     padding: 13px 0 5px 0;
-    transition: all 0.3s;
+    transition: 0.3s;
 }
-
 
 .our-team-img-1:hover .our-team-img-bottom,
 .our-team-img-2:hover .our-team-img-bottom,
@@ -567,10 +565,10 @@ footer {
 }
 
 .our-team-img-bottom img {
-    height: 20px;
-    width: 20px;
-    margin-top: 50px;
-    transition: all 0.4s;
+    height: 24px;
+    width: 24px;
+    margin: 50px 1px 0 1px;
+    transition: 0.6s;
     cursor: pointer;
 }
 
@@ -588,6 +586,221 @@ footer {
     background-size: cover;
     background-position: bottom;
 }
+
+#about-us-section footer {
+    background-color: #dde7f8;
+}
+
+/*PRICING SECTION----------------------------------*/
+/*PRICING DIV--------------------------------------*/
+#pricing-section {
+    background: url(images/wave-pricing.svg);
+    background-color: var(--ghost-white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 150px 0 0 0;
+}
+
+.pricing-div h3 {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-column: repeat(2, 1fr);
+    grid-row: repeat(2, 1fr);
+    gap: 25px;
+    padding: 0 12%;
+    padding-bottom: 100px;
+}
+
+.pricing-grid-panel-1,
+.pricing-grid-panel-2,
+.pricing-grid-panel-3,
+.pricing-grid-panel-4 {
+    padding: 35px;
+    background-color: white;
+    transition: 0.2s;
+    box-shadow: 0 20px 35px 0 rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.pricing-grid-panel-1:hover,
+.pricing-grid-panel-2:hover,
+.pricing-grid-panel-3:hover,
+.pricing-grid-panel-4:hover {
+    box-shadow: 0 20px 35px 0 rgba(0,0,0,0.08);
+    transform: scale(1.04);
+}
+
+.pricing-grid-panel-1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.pricing-grid-panel-2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.pricing-grid-panel-3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.pricing-grid-panel-4 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.pricing-grid-panel-1 div,
+.pricing-grid-panel-2 div,
+.pricing-grid-panel-3 div,
+.pricing-grid-panel-4 div {
+    border-bottom: 1px solid var(--main-green);
+    padding-bottom: 25px;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pricing-grid-panel-1:hover div,
+.pricing-grid-panel-2:hover div,
+.pricing-grid-panel-3:hover div,
+.pricing-grid-panel-4:hover div {
+    border-bottom: 2px solid var(--main-green);
+    transition: border 0.4s;
+    padding-bottom: 24px;
+}
+
+.pricing-grid h5 {
+    font-size: 25px;
+    margin-right: auto;
+}
+
+.pricing-grid span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.pricing-grid p {
+    padding: 30px 0 27px 0;
+    font-size: 17px;
+}
+
+.pricing-grid button {
+    font-size: 14px;
+    padding: 11px 34px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-green);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+.pricing-grid button:hover {
+    background-color: #16B663;
+    transform: scale(1.1);
+}
+
+#pricing-section footer {
+    background-color: #dde7f8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
