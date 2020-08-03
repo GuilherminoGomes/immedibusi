@@ -285,7 +285,7 @@ header ul li a:hover {
 
 /*FOOTER--------------------------------------*/
 footer {
-    padding: 22px 0;
+    padding: 22px 0 30px 0;
     color: var(--font-color); 
     background-color: var(--main-green);
     display: flex;
@@ -318,7 +318,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    padding: 150px 10% 50px 9%;
+    padding: 175px 10% 50px 9%;
     display: flex;
     align-items: center;
 }
@@ -598,7 +598,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    padding: 150px 0 0 0;
+    padding: 175px 0 0 0;
 }
 
 .pricing-div h3 {
@@ -699,7 +699,7 @@ footer {
     color: white;
     font-weight: 700;
     cursor: pointer;
-    transition: .3s all ease;
+    transition: 0.3s all ease;
 }
 
 .pricing-grid button:hover {
@@ -713,14 +713,13 @@ footer {
 
 
 /*CONTACT US SECTION--------------------------------------*/
-/**/
 #contact-us-section {
     background: url(images/wave-contact-us.svg);
     background-color: var(--ghost-white);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    padding: 150px 0 0 0;
+    padding: 175px 0 0 0;
 }
 
 #contact-us-section h3 {
@@ -756,7 +755,7 @@ footer {
 #contact-us-section input,
 #contact-us-section textarea {
     border: solid 1px #dce1ec;
-    font-size: 18px;
+    font-size: 17px;
     padding: 3px 0 3px 5px;
     margin-bottom: 12px;
 }
@@ -764,7 +763,7 @@ footer {
 #contact-us-section textarea {
     max-width: 100%;
     min-width: 100%;
-    min-height: 80px;
+    min-height: 120px;
 }
 
 #contact-us-section button {
@@ -887,11 +886,6 @@ and (orientation: portrait) {
     .our-clients-imgs {
         margin: 10px 20px;
     }
-
-    /*FOOTER-------------------------------------*/
-    #home-section footer {
-        padding-bottom: 30px;
-    }
     
 
     /*ABOUT US SECTION----------------------------------*/
@@ -976,6 +970,168 @@ and (orientation: portrait) {
     .our-team-img-1,
     .our-team-img-2 {
         margin-bottom: 50px;
+    }
+
+
+    /*PRICING SECTION-----------------------------*/
+    .pricing-grid {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    
+    .pricing-grid-panel-1,
+    .pricing-grid-panel-2,
+    .pricing-grid-panel-3,
+    .pricing-grid-panel-4 {
+        transition: 0.2s;
+    }
+    
+    .pricing-grid-panel-1:hover div,
+    .pricing-grid-panel-2:hover div,
+    .pricing-grid-panel-3:hover div,
+    .pricing-grid-panel-4:hover div {
+        transition: border 0.3s;
+    }
+    
+    .pricing-grid-panel-1 button,
+    .pricing-grid-panel-4 button {
+        margin-top: 20px;
+    }
+
+
+    /*CONTACT US SECTION--------------------------------------*/
+    #contact-us-section form {
+        padding: 70px 15% 60px 15%;
+    }
+
+    #contact-us-section textarea {
+        min-height: 140px;
+    }
+
+    #contact-us-section footer {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+}
+
+
+@media only screen
+and (max-width: 1024px)
+and (orientation: landscape) {
+    /*HOME SECTION--------------------------------*/
+    #home-section .main {
+        padding: 330px 0 340px 9%;
+    }
+
+    .why-choose-us-left p {
+        font-size: 18px;
+        padding-right: 80px;
+    }
+    
+    .why-choose-us-left-imgs {
+        margin: 20px 0;
+    }
+
+    .why-choose-us-left-imgs img {
+        height: 43px;
+        width: 43px;
+        margin-right: 15px;
+    }
+
+    .why-choose-us-left-imgs p {
+        font-size: 21px;
+    }
+
+    .our-clients-imgs {
+        margin: 0 8px;
+    }
+
+    .newsletter input {
+        padding: 3px 232px 3px 5px;
+        font-size: 17px;
+    }
+
+
+    /*ABOUT US SECTION----------------------------*/
+    /*SERVICES-------------------------------------*/
+    .services h3 {
+        margin-bottom: 25px;
+    }
+
+    .services-grid {
+        gap: 30px;
+        padding: 0 8%;
+    }
+
+    /*OUR TEAM------------------------------------*/
+    .our-team h3 {
+        margin-bottom: 47px;
+    }
+    
+    .our-team-container {
+        flex-wrap: nowrap;
+        padding: 0 5%;
+    }
+    
+    .our-team-img-1,
+    .our-team-img-2,
+    .our-team-img-3,
+    .our-team-img-4 {
+        height: 210px;
+        width: 210px;
+    }
+
+    .our-team-img-bottom {
+        height: 35%;
+    }
+
+    .our-team-img-1:hover .our-team-img-bottom,
+    .our-team-img-2:hover .our-team-img-bottom,
+    .our-team-img-3:hover .our-team-img-bottom,
+    .our-team-img-4:hover .our-team-img-bottom {
+        height: 50%;
+    }
+    
+    .our-team-img-bottom h6 {
+        font-size: 18px;
+    }
+
+    .our-team-img-bottom img {
+        height: 22px;
+        width: 22px;
+        margin: 50px 2px 0 2px;
+    }
+
+    /*PRICING SECTION-----------------------------*/
+    .pricing-grid {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .pricing-grid-panel-1,
+    .pricing-grid-panel-2,
+    .pricing-grid-panel-3,
+    .pricing-grid-panel-4 {
+        transition: 0.3s;
+    }
+    
+    .pricing-grid-panel-1:hover div,
+    .pricing-grid-panel-2:hover div,
+    .pricing-grid-panel-3:hover div,
+    .pricing-grid-panel-4:hover div {
+        transition: border 0.2s;
+    }
+    
+    .pricing-grid-panel-1 button,
+    .pricing-grid-panel-3 button,
+    .pricing-grid-panel-4 button {
+        margin-top: 20px;
+    }
+
+
+    /*CONTACT US SECTION--------------------------------------*/
+    #contact-us-section form {
+        padding: 70px 20% 60px 20%;
     }
 }
 
