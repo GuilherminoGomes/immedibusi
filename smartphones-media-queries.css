@@ -145,6 +145,7 @@ and (orientation: portrait) {
     /*OUR TEAM------------------------------------*/
     .our-team-container {
         padding: 0 14%;
+        justify-content: space-around;
     }
 
     .our-team-img-1,
