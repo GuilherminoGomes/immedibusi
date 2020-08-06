@@ -782,6 +782,11 @@ footer {
     transform: scale(1.04);
 }
 
+.invisible-div {
+    display: none;
+}
+
+
 
 
 
@@ -1137,7 +1142,92 @@ and (orientation: landscape) {
 
 
 
+/*SMARTPHONES---------------------------------------*/
+@media only screen
+and (max-width: 480px)
+and (orientation: portrait) {
+    /*HOME SECTION--------------------------------*/
+    header .logo {
+        display: none;
+    }
 
+    header .logo-for-smartphones {
+        height: 40px;
+        width: 40px;
+        display: block;
+        margin-right: auto;
+    }
+
+    /*header .open {
+        display: block;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+
+    header .close {
+        display: block;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }*/
+
+
+    /*MAIN SECTION-------------------------------*/
+    .sections h3 {
+        font-size: 32px;
+    }
+
+    #home-section .main {
+        padding: 330px 0 285px 9%;
+    }
+
+    .why-choose-us-div {
+        padding: 65px 4% 60px 4%;
+    }
+
+    .why-choose-us-div p {
+        font-size: 16px;
+    }
+
+    .why-choose-us-left-imgs {
+        margin: 15px 0;
+    }
+
+    .why-choose-us-left-imgs img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .why-choose-us-left-imgs p {
+        font-size: 17px;
+    }
+
+    /*NEWSLETTER---------------------------------------*/
+    .newsletter {
+        padding: 65px 0;
+    }
+
+    .newsletter h3 {
+        margin-bottom: 35px;
+    }
+
+    .newsletter p {
+        font-size: 17px;
+        padding: 0 1%;
+        margin-bottom: 25px;
+    }
+
+    .newsletter input {
+        font-size: 15px;
+        padding: 3px 22% 3px 5px;
+    }
+
+    .newsletter button {
+        font-size: 17px;
+        padding: 12px 30%;
+    }
+}
 
 
 
