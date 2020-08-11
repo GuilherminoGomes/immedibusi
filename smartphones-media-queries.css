@@ -1,8 +1,18 @@
+@import url('./tablets-media-queries.css');
+
+@import url('./styles.css');
+
 /*SMARTPHONES---------------------------------------*/
 @media only screen
 and (max-width: 480px)
 and (orientation: portrait) {
     /*HOME SECTION--------------------------------*/
+    header,
+    header.sticky {
+        padding: 10px 50px;
+        background: #fff;
+    }
+
     header .logo {
         display: none;
     }
@@ -14,20 +24,83 @@ and (orientation: portrait) {
         margin-right: auto;
     }
 
-    /*header .open {
-        display: block;
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
+    header ul {
+        position: absolute;
+        top: 59px;
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+        overflow: auto;
+        background: #fff;
+        visibility: hidden;
+        opacity: 0;
     }
 
-    header .close {
+    header.MQactive ul {
+        visibility: visible;
+        opacity: 1;
         display: block;
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-    }*/
+        padding-top: 60px;
+    }
 
+    header.MQactive ul li a.active-nav-li {
+        display: inline-block;
+        margin: 10px 0;
+        font-size: 20px;
+        padding-bottom: 0;
+        padding-left: 10px;
+        border-bottom: none;
+        border-left: solid 3px var(--main-green);
+        transition: 0.1s border ease;
+    }
+
+    header.MQactive ul li a {
+        display: inline-block;
+        margin: 10px 0;
+        font-size: 20px;
+        padding-bottom: 0;
+        padding-left: 10px;
+        transition: 0.1s border ease;
+    }
+
+    header.MQactive ul li a:hover {
+        padding-bottom: 0;
+        padding-left: 8px;
+        border-bottom: none;
+        border-left: solid 2px var(--main-green);
+        color: var(--main-green);
+    }
+
+    .toggle {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .toggle:before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        z-index: 1;
+        box-shadow: 0 10px 0 #000;
+        transition: 0.5s;
+    }
+
+    .toggle:after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        z-index: 1;
+        transition: 0.5s;
+    }
 
     /*MAIN--------------------------------------*/
     .sections h3 {
