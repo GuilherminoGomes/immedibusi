@@ -20,11 +20,6 @@ window.addEventListener('scroll', function() {
     header.classList.toggle('sticky', window.scrollY > 0);
 })
 
-
-/*navLis.forEach.addEventListener('click', toggle)
-const toggleDiv = document.querySelector('.toggle')
-toggleDiv.addEventListener('click', toggle)*/
-
 function toggle() {
     const header = document.querySelector('header');
     header.classList.toggle('MQactive');
