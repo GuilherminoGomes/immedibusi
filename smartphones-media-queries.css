@@ -165,7 +165,16 @@ and (orientation: portrait) {
     /*ABOUT US SECTION--------------------------------*/
     /*ABOUT US DIV------------------------------------*/
     .about-us-div {
-        padding: 175px 10% 30px 5%;
+        padding: 175px 5% 30px 5%;
+        width: 100%;
+    }
+
+    .about-us-div-left {
+        display: none;
+    }
+
+    .about-us-div-right {
+        width: 100%;
     }
 
     .about-us-div-right h4 {
